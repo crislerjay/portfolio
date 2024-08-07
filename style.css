@@ -127,12 +127,12 @@ body {
   overflow: hidden;
 }
 
-.main::before {
+/* .main::before {
   content: url('./images/pattern-rings.svg');
   position: absolute;
   top: 13rem;
   left: -10rem;
-}
+} */
 
 .hero {
   display: flex;
@@ -168,13 +168,13 @@ body {
   gap: 5rem 2rem;
   padding: 7rem 0 6rem;
 }
-
+/* 
 .skillList::after {
   content: url('./images/pattern-rings.svg');
   position: absolute;
   bottom: 0;
   right: -50rem;
-}
+} */
 
 .skills .headingL {
   margin-bottom: 1.4rem;
