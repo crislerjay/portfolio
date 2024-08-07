@@ -28,7 +28,7 @@ body {
 .headingXl {
   font-size: 8.8rem;
   font-weight: bold;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: -2.5px;
 }
 
@@ -77,6 +77,10 @@ body {
   color: var(--clr-green);
 }
 
+.border {
+  border-top: 1px solid var(--clr-white);
+}
+
 @media screen and (max-width: 768px) {
   .headingXl {
     font-size: 4rem;
@@ -115,8 +119,8 @@ body {
   }
 }
 
-.header {
-  margin: 4rem 0 12.7rem;
+.header, .footer {
+  padding: 4rem 0;
 }
 
 .main {
@@ -131,7 +135,11 @@ body {
 }
 
 .hero {
-  padding-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: calc(100vh - 128px);
   text-align: center;
 }
 
@@ -153,16 +161,15 @@ body {
   margin-right: 5rem;
 }
 
-.skills {
+.skillList {
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(34.5rem, 1fr));
   gap: 5rem 2rem;
   padding: 7rem 0 6rem;
-  border-top: 1px solid var(--clr-white);
 }
 
-.skills::after {
+.skillList::after {
   content: url('./images/pattern-rings.svg');
   position: absolute;
   bottom: 0;
@@ -205,6 +212,38 @@ body {
 .projects .techList li:not(:first-child) {
   margin-left: 2rem;
 }
-.projects {}
-.projects {}
-.projects {}
+
+.contact {
+  padding: 8rem 0;
+  background-color: var(--clr-dark-gray);
+}
+
+.contact {}
+.contact .col02 {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .col {
+  width: 40%;
+}
+
+.contact input,
+.contact textarea{
+  width: 100%;
+  padding: 1.6rem;
+  background-color: var(--clr-dark-gray);
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--clr-white);
+  color: var(--clr-white);
+}
+
+.contact .submit {
+  margin-top: 3rem;
+  text-align: right;
+}
+
+.footer {
+  background-color: var(--clr-dark-gray);
+}
